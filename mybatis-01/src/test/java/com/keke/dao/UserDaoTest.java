@@ -17,6 +17,9 @@ public class UserDaoTest {
         UserDao userDao = sqlSession.getMapper(UserDao.class);
         List<User> userList = userDao.getUserList();
 
+        // 方式二：
+//        List<User> userList = sqlSession.selectList("com.keke.dao.UserDao.getUserList");
+
         for (User user : userList) {
             System.out.println(user);
         }
