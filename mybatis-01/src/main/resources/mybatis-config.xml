@@ -16,4 +16,9 @@
             </dataSource>
         </environment>
     </environments>
+
+    <!--每一个Mapper.xml都需要在Mybatis核心配置文件中注册！-->
+    <mappers>
+        <mapper resource="com/keke/dao/UserMapper.xml" />
+    </mappers>
 </configuration>
