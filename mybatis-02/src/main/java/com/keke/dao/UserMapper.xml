@@ -6,7 +6,7 @@
 <mapper namespace="com.keke.dao.UserMapper">
     
     <!--select查询语句-->
-    <select id="getUserList" resultType="com.keke.pojo.User">
+    <select id="getUserList" resultType="User">
         select * from user
     </select>
     
